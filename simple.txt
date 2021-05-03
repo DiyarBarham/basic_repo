@@ -1,0 +1,82 @@
+academy@DESKTOP-64MBUO9 MINGW64 ~/Desktop/basic_repo
+$ git clone https://github.com/DiyarBarham/basic_repo.git
+
+academy@DESKTOP-64MBUO9 MINGW64 ~/desktop/basic_repo
+$ cd basic_repo
+
+academy@DESKTOP-64MBUO9 MINGW64 ~/desktop/basic_repo/basic_repo (master)
+$
+
+
+academy@DESKTOP-64MBUO9 MINGW64 ~/Desktop/basic_repo/basic_repo (master)
+$ git add .
+
+academy@DESKTOP-64MBUO9 MINGW64 ~/Desktop/basic_repo/basic_repo (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   first/index.html.txt
+        new file:   first/style.css.txt
+        new file:   second/js.js.txt
+
+
+academy@DESKTOP-64MBUO9 MINGW64 ~/Desktop/basic_repo/basic_repo (master)
+$ git commit -m "a comment"
+[master (root-commit) d8c3be4] a comment
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 first/index.html.txt
+ create mode 100644 first/style.css.txt
+ create mode 100644 second/js.js.txt
+
+academy@DESKTOP-64MBUO9 MINGW64 ~/Desktop/basic_repo/basic_repo (master)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (5/5), 349 bytes | 349.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/DiyarBarham/basic_repo.git
+ * [new branch]      master -> master
+
+academy@DESKTOP-64MBUO9 MINGW64 ~/Desktop/basic_repo/basic_repo (master)
+$ git add .
+
+academy@DESKTOP-64MBUO9 MINGW64 ~/Desktop/basic_repo/basic_repo (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   third/test.rtf
+
+
+academy@DESKTOP-64MBUO9 MINGW64 ~/Desktop/basic_repo/basic_repo (master)
+$ git commit -m "the third file"
+[master fdef42c] the third file
+ 1 file changed, 1 insertion(+)
+ create mode 100644 third/test.rtf
+
+academy@DESKTOP-64MBUO9 MINGW64 ~/Desktop/basic_repo/basic_repo (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+academy@DESKTOP-64MBUO9 MINGW64 ~/Desktop/basic_repo/basic_repo (master)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 351 bytes | 351.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/DiyarBarham/basic_repo.git
+   d8c3be4..fdef42c  master -> master
